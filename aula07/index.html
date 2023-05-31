@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        .row {
+            height: 200px;
+            background-color: aliceblue;
+        }
+        .col-3 {
+            background-color: antiquewhite;
+            padding: 20px;
+            border: solid 1px black
+        }
+    </style>
+    <title>Formatação de Colunas</title>
+  </head>
+  <body>
+    <!-- div.conteiner>div.row>div.col-3{Coluna $}*3  - Abreviação para gerar as colunas abaixo-->
+    <div class="conteiner">
+        <!-- 
+            align-content-MODO: as colunas ficam verticalmente alinhadas de um modo 
+            align-content-BREAKPOINT-MODO: caso quisesse alinhar vericalmente em algum breakpoint específico
+        -->
+        <!-- 
+            justify-content-MODO: as colunas ficam horizontalmente alinhadas de um modo
+                center: centralizadas
+                start: início
+                end: final
+                between: espaço entre colunas apenas
+                around: espaço entre colunas e nas extremidades
+                evenly: espaço igual
+            align-content-BREAKPOINT-MODO: caso quisesse alinhar vericalmente em algum breakpoint específico
+        -->
+        <div class="row justify-content-evenly">
+            <!-- align-self-MODO: a coluna específca fica alinhada verticalmente de um modo -->
+            <!-- div.w-100": adicionar uma quebra de linha entre uma coluna e outra -->
+            <!-- offset-NUM: deslomento de colunas-->
+            <!-- 
+                mx-auto: adicionar uma margem automática no eixo x das colunas
+                ms-auto: adicionar uma margem automática no esquerda (start) das colunas
+            -->
+            <div class="col-3">Coluna 1</div>
+            <div class="col-3">Coluna 2</div>
+            <div class="col-3">Coluna 3</div>
+        </div>
+    </div>
+    <hr>
+    <div><h6><a href="/index.html">Voltar ao Início</a></h6></div>
+  </body>
+</html>
